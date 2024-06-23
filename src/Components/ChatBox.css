@@ -24,13 +24,13 @@
   
   .chat-message.user {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: #f3504a;
     color: white;
   }
   
   .chat-message.bot {
     align-self: flex-start;
-    background-color: #e9e9eb;
-    color: black;
+    background-color: #fffeb3;
+    color: rgb(0, 0, 0);
   }
   
