@@ -1,10 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HeroSection from './Components/HeroSection';
 
 function App() {
   return (
     <>
-      <h1>Rail Food</h1>
+      <HeroSection />
     </>
   );
 }
