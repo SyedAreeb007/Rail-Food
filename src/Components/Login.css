@@ -1,0 +1,296 @@
+/* Import Poppins font if not already imported */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply Poppins font to relevant elements */
+.login-form,
+.login-form h2,
+.input-container input,
+.forget-password,
+.reset-password,
+.or-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Your existing styles */
+.login-container {
+    position: relative;
+    background-image: url('../Assets/Images/FoodBackground.png');
+    background-size: 120% 120%;
+    /* Set the size as needed */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: center;
+    height: 100vh;
+    /* Adjust this as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Assets/Images/GreenBlur.png');
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    opacity: 1;
+    /* Adjust opacity to make the overlay semi-transparent */
+    pointer-events: none;
+    /* Ensure the overlay doesn't interfere with clicks */
+}
+
+.screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    /* Ensure the screens are above the background */
+}
+
+.white-screen {
+    width: 550px;
+    /* Set desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: -10px;
+    /* Adjust spacing between the screens */
+}
+
+.green-screen {
+    width: 350px;
+    /* Set desired width */
+    height: 560px;
+    /* Maintain aspect ratio */
+    margin-left: -20px;
+    /* Adjust spacing between the screens */
+}
+
+.login-form {
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    z-index: 2;
+    /* Ensure the form is above other elements */
+    margin-right: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    padding: 10px 20px;
+    width: 400px;
+    font-size: 18px;
+    border: 1px solid #CBC5C5;
+    border-radius: 15px;
+}
+
+.input-container input::placeholder {
+    color: #BEBCBC;
+}
+
+.login-form button {
+    margin-top: 10px;
+    width: 420px;
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: bolder;
+    background-color: #028643;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #14C66C;
+}
+
+.or-text {
+    color: #A8A5A5;
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+.social-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.login-with-google {
+    width: 200px;
+    /* Set desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Adjust spacing between the images */
+    cursor: pointer;
+}
+
+.login-with-facebook {
+    width: 200px;
+    /* Set desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-left: 10px;
+    /* Adjust spacing between the images */
+    cursor: pointer;
+}
+
+.forget-password {
+    color: #BEBCBC;
+    margin-top: 17px;
+    font-size: 14px;
+}
+
+.reset-password {
+    color: #3BADCD;
+    cursor: pointer;
+}
+
+.signup {
+    color: #BEBCBC;
+    margin-top: -15px;
+    font-size: 14px;
+}
+
+.signup-account {
+    color: #3BADCD;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* Stack elements vertically */
+        height: 100vh;
+        /* Adjust height as needed */
+        background-image: url('../Assets/Images/FoodBackground.png');
+        background-size: 120% 120%;
+        /* Set the size as needed */
+        background-repeat: no-repeat;
+        /* Prevent the image from repeating */
+        background-position: center;
+    }
+
+    .white-screen {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        height: 480px;
+        /* Set desired height */
+        margin-right: -5%;
+        /* Adjust spacing for smaller screens */
+    }
+
+    .green-screen {
+        display: none;
+        /* Hide GreenScreen on smaller screens */
+    }
+
+    .login-form {
+        text-align: center;
+        color: black;
+        font-size: 0.875rem;
+        /* 14px converted to rem */
+        max-width: 90%;
+        margin-top: -40px;
+        /* Adjust top margin for spacing */
+        margin-right: -5%;
+    }
+
+    .login-form h2 {
+        font-size: 1.5rem;
+        /* 24px converted to rem */
+        margin-bottom: 15px;
+        /* Reduced margin for smaller screens */
+        margin-right: -1%;
+    }
+
+    .input-container input {
+        font-size: 0.875rem;
+        /* 14px converted to rem */
+        max-width: 200px;
+        /* Adjust maximum width for smaller screens */
+        width: 150px;
+        height: 40px;
+    }
+
+    .login-form button {
+        font-size: 0.9375rem;
+        /* 15px converted to rem */
+        max-width: 220px;
+        /* Adjust maximum width for smaller screens */
+        width: 150px;
+        height: 40px;
+    }  
+
+    .or-text {
+        font-size: 0.75rem;
+        /* 12px converted to rem */
+        margin-top: 10px;
+        /* Adjusted margin for smaller screens */
+    }
+
+    .social-login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* Stack social login icons vertically */
+        margin-top: 10px;
+        /* Adjusted margin for smaller screens */
+    }
+
+    .social-login-container img {
+        max-width: 300px;
+        /* Adjust maximum width for social login icons */
+        margin-bottom: 10px;
+        /* Adjust spacing between social login icons */
+        width: 130px;
+    }
+
+    .social-login-container .login-with-facebook {
+        margin-left: -4.5%;
+    }
+
+    .forget-password {  
+        font-size: 0.75rem;
+        /* 14px converted to rem */
+        max-width: 200px;
+        /* Adjust maximum width for smaller screens */
+        margin-top: 10px;
+        /* Adjust margin for smaller screens */
+        margin-left: 10%;
+    }
+
+    .signup {  
+        font-size: 0.75rem;
+        /* 14px converted to rem */
+        max-width: 200px;
+        /* Adjust maximum width for smaller screens */
+        margin-top: -10px;
+        /* Adjust margin for smaller screens */
+        margin-left: 10%;
+    }
+}
