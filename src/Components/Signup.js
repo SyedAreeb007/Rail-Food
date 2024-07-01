@@ -4,6 +4,7 @@ import WhiteScreen from '../Assets/Images/WhiteScreen.png';
 import OrangeScreen from '../Assets/Images/OrangeScreen.png';
 import SignupWithGoogle from '../Assets/Images/SignupWithGoogle.png';
 import SignupWithFacebook from '../Assets/Images/SignupWithFacebook.png';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
@@ -36,7 +37,7 @@ const Signup = () => {
             <img src={SignupWithFacebook} alt="Signup with Facebook" className="signup-with-facebook" />
           </div>
           <p className="have-account">
-            Already have an account? <span className="login-account">Login</span>
+            Already have an account? <Link to="/" className="login-account">Login</Link>
           </p>
         </div>
       </div>

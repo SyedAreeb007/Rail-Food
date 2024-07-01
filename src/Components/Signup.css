@@ -18,6 +18,7 @@
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -29,6 +30,7 @@
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -39,6 +41,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -142,7 +145,7 @@
 }
 
 .terms-container input {
-  margin-right: -5px;
+  margin-right: 2px;
   margin-top: -20px;
   animation: signupFadeIn 2s ease-in-out;
 }
@@ -218,6 +221,7 @@
 .login-account {
   color: #3BADCD;
   cursor: pointer;
+  text-decoration: none;
   animation: signupFadeIn 2s ease-in-out;
 }
 

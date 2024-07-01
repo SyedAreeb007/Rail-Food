@@ -164,6 +164,7 @@
 .signup-account {
   color: #3BADCD;
   cursor: pointer;
+  text-decoration: none;
   animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
 }
 

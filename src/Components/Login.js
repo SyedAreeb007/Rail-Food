@@ -4,6 +4,7 @@ import WhiteScreen from '../Assets/Images/WhiteScreen.png';
 import GreenScreen from '../Assets/Images/GreenScreen.png';
 import LoginWithGoogle from '../Assets/Images/LoginWithGoogle.png';
 import LoginWithFacebook from '../Assets/Images/LoginWithFacebook.png';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -27,7 +28,7 @@ const Login = () => {
             Forget password? <span className="reset-password">Reset password</span>
           </p>
           <p className="signup">
-            Don't have an account? <span className="signup-account">Signup</span>
+            Don't have an account? <Link to="/signup" className="signup-account">Signup</Link>
           </p>
         </div>
         <img src={WhiteScreen} alt="White Screen" className="White-screen" />
