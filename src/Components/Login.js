@@ -30,7 +30,7 @@ const Login = () => {
             Don't have an account? <span className="signup-account">Signup</span>
           </p>
         </div>
-        <img src={WhiteScreen} alt="White Screen" className="white-screen" />
+        <img src={WhiteScreen} alt="White Screen" className="White-screen" />
         <img src={GreenScreen} alt="Green Screen" className="green-screen" />
       </div>
     </div>

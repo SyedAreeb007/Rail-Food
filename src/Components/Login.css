@@ -48,7 +48,7 @@
   z-index: 1;
 }
 
-.white-screen {
+.White-screen {
   width: 550px;
   height: auto;
   margin-right: -10px;
@@ -77,6 +77,7 @@
   margin-bottom: 30px;
   font-size: 34px;
   font-weight: bold;
+  animation: signupFadeIn 2s ease-in-out;
 }
 
 .input-container {
@@ -208,7 +209,7 @@
     background-position: center;
   }
 
-  .white-screen {
+  .White-screen {
     width: 90%;
     height: 480px;
     margin-right: -1%;
@@ -268,13 +269,13 @@
     font-size: 0.75rem;
     max-width: 300px;
     margin-top: 10px;
-    margin-left: 4px;
+    margin-left: 13px;
   }
 
   .signup {
     font-size: 0.75rem;
     max-width: 300px;
     margin-top: -10px;
-    margin-left: 4px;
+    margin-left: 12px;
   }
 }

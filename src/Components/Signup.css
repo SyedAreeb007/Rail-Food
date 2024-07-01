@@ -1,0 +1,320 @@
+/* Import Poppins font if not already imported */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply Poppins font to relevant elements */
+.signup-form,
+.signup-form h2,
+.input-container input,
+.have-account,
+.login-account,
+.or-text,
+.terms-container {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Animation keyframes */
+@keyframes signupSlideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes signupSlideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes signupFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Your existing styles */
+.signup-container {
+  position: relative;
+  background-image: url('../Assets/Images/FoodBackground.png');
+  background-size: 120% 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/Images/OrangeBlur.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  pointer-events: none;
+  animation: signupFadeIn 1s ease-in-out;
+}
+
+.screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.white-screen {
+  width: 550px;
+  height: auto;
+  margin-left: -10px;
+  animation: signupSlideInFromLeft 1s ease-in-out;
+}
+
+.orange-screen {
+  width: 350px;
+  height: 560px;
+  margin-right: -20px;
+  animation: signupSlideInFromRight 1s ease-in-out;
+}
+
+.signup-form {
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  z-index: 2;
+  margin-left: 300px;
+  margin-top: -45px;
+  animation: signupFadeIn 1s ease-in-out;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.input-container {
+  margin-bottom: 10px;
+  font-size: 14px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.input-container input {
+  padding: 10px 1z0px;
+  width: 400px;
+  font-size: 14px;
+  border: 1px solid #CBC5C5;
+  border-radius: 15px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.input-container input::placeholder {
+  color: #BEBCBC;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 250px;
+  max-width: 400px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.terms-container input {
+  margin-right: -5px;
+  margin-top: -20px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.terms-container label {
+  font-size: 12px;
+  color: #BEBCBC;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.terms-link {
+  color: #3BADCD;
+  cursor: pointer;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.signup-form button {
+  width: 420px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: #FC8A06;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -1px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.signup-form button:hover {
+  background-color: #ff9d76;
+}
+
+.or-text {
+  color: #A8A5A5;
+  font-size: 12px;
+  margin-top: 12px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.social-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.signup-with-google {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.signup-with-facebook {
+  width: 200px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.have-account {
+  color: #BEBCBC;
+  margin-top: 17px;
+  font-size: 12px;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+.login-account {
+  color: #3BADCD;
+  cursor: pointer;
+  animation: signupFadeIn 2s ease-in-out;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../Assets/Images/FoodBackground.png');
+    background-size: 120% 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .white-screen {
+    width: 90%;
+    height: 600px;
+    margin-left: -1%;
+  }
+
+  .orange-screen {
+    display: none;
+  }
+
+  .signup-form {
+    text-align: center;
+    color: black;
+    font-size: 0.875rem;
+    max-width: 90%;
+    margin-top: -30px;
+    margin-left: 2%;
+  }
+
+  .signup-form h2 {
+    font-size: 1.4rem;
+    margin-bottom: 13px;
+  }
+
+  .input-container input {
+    font-size: 0.875rem;
+    max-width: 300px;
+    width: 250px;
+    height: 40px;
+  }
+
+  .terms-container {
+    font-size: 0.75rem;
+    max-width: 300px;
+    width: 222px;
+    margin-left: 44px;
+    margin-top: 8px;
+  }
+
+  .terms-container input {
+    margin-left: 4px;
+  }
+
+  .signup-form button {
+    font-size: 0.9375rem;
+    max-width: 300px;
+    width: 250px;
+    height: 40px;
+    margin-top: -8px;
+  }
+
+  .or-text {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    margin-bottom: -2px;
+  }
+
+  .social-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .social-login-container img {
+    max-width: 300px;
+    margin-bottom: 10px;
+    width: 200px;
+    margin-left: 10px;
+  }
+
+  .social-login-container .signup-with-facebook {
+    margin-left: 0.5%;
+  }
+
+  .have-account {
+    font-size: 0.75rem;
+    max-width: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
