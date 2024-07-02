@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import './ChatBox.css';
+import './Header/Header.css';
 
 const ChatBox = () => {
   const messages = [

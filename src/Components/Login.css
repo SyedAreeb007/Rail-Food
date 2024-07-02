@@ -110,6 +110,7 @@
   border-radius: 5px;
   cursor: pointer;
   animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+  transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
 }
 
 .login-form button:hover {

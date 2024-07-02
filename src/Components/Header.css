@@ -1,0 +1,118 @@
+/* General styles for header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Changed from #f8f8f8 to #ffffff */
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container .logo-container {
+  flex: 1;
+}
+
+.header-container .logo-container .logo {
+  height: 50px;
+}
+
+.header-container .buttons-container {
+  display: flex;
+  align-items: center; /* Align buttons vertically */
+}
+
+.header-container .buttons-container button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px; /* Decreased font size */
+  color: #fff;
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 120px;
+  transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.header-container .buttons-container .cart-button {
+  background-color: #FC8A06;
+  margin-left: 10px; /* Add margin between buttons */
+}
+
+.header-container .buttons-container .login-button {
+  background-color: #2F5104;
+  margin-left: 10px; /* Add margin between buttons */
+}
+
+.header-container .buttons-container button:hover {
+  opacity: 0.9;
+}
+
+.header-container .buttons-container .cart-button:hover {
+  background-color: #F9AA4E; /* Hover color for cart button */
+}
+
+.header-container .buttons-container .login-button:hover {
+  background-color: #14C66C; /* Hover color for login button */
+}
+
+.header-container .buttons-container .button-logo {
+  height: 15px;
+  margin-right: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px; /* Reduce padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .header-container .buttons-container {
+    margin-top: -35px; /* Add margin between logo and buttons */
+    margin-left: 130px;
+  }
+
+  .header-container .buttons-container button {
+    font-size: 12px; /* Decrease font size for buttons */
+    padding: 8px 12px; /* Adjust padding for smaller buttons */
+    margin-left: 5px; /* Reset margin for buttons */
+  }
+
+  .header-container .logo-container .logo {
+    height: 40px; /* Decrease logo height */
+    margin-left: 10px;
+  }
+}
