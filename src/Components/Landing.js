@@ -2,6 +2,13 @@ import React from 'react';
 import './Landing.css'; // Import CSS file
 import LandingImage from '../Assets/Images/Landing.png';
 import TrainImage from '../Assets/Images/TrainImage.png'; // Import the train image
+import BikeImage from '../Assets/Images/BikeImage.png';
+import ChickenImage from '../Assets/Images/ChickenImage.png';
+import EggImage from '../Assets/Images/EggImage.png';
+import FriesImage from '../Assets/Images/FriesImage.png';
+import BenefitImage1 from '../Assets/Images/BenefitImage1.png';
+import BenefitImage2 from '../Assets/Images/BenefitImage2.png';
+import BenefitImage3 from '../Assets/Images/BenefitImage3.png';
 
 const Landing = () => {
     return (
@@ -34,6 +41,30 @@ const Landing = () => {
                 <img src={TrainImage} alt="Train" className="train-image" style={{ animation: 'fadeInRight 1s forwards' }} /> {/* Add Train Image */}
             </div>
             <div className="background-box" style={{ animation: 'fadeIn 3s forwards' }}></div> {/* New box for mobile view */}
+            <div className="text-section">
+                <div className="text-icons-wrapper">
+                    <img src={BikeImage} alt="Bike" className="side-icon left-icon" />
+                    <div className="ride-dine-text">
+                        <img src={FriesImage} alt="Fries" className="small-icon1" />
+                        <span className="ride-text">Ride </span>
+                        <span className="and-text">&</span>
+                        <span className="dine-text"> Dine</span>
+                        <img src={EggImage} alt="Egg" className="small-icon2" />
+                    </div>
+                    <img src={ChickenImage} alt="Chicken" className="side-icon right-icon" />
+                </div>
+                <div className="enjoy-text">Enjoy Delicious Food</div>
+                <div className="anywhere-text">Anywhere You Go!</div>
+                <div className="experience-our-text">
+                    <span className="experience-text">Experience Our</span>
+                    <span className="benefits-text">Benefits</span>
+                </div>
+                <div className="benefits-images">
+                    <img src={BenefitImage1} alt="Benefit 1" className="benefit-image" />
+                    <img src={BenefitImage2} alt="Benefit 2" className="benefit-image" />
+                    <img src={BenefitImage3} alt="Benefit 3" className="benefit-image" />
+                </div>
+            </div>
         </div>
     );
 }

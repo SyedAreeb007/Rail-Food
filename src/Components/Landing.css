@@ -1,5 +1,16 @@
 /* Landing page CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
 .landing-container {
     display: flex;
     align-items: center;
@@ -16,7 +27,7 @@
 
 .landing-inputs-overlay {
     position: absolute;
-    top: 20px;
+    top: -470px;
     right: 400px;
     width: 100%;
     height: 100%;
@@ -84,6 +95,145 @@
     display: none;
 }
 
+.text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Center the text */
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    animation: fadeInUp 2s forwards; /* Add animation to text section */
+}
+
+.text-icons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text-icons-wrapper .left-icon {
+    position: absolute;
+    left: -400px; /* Adjust position as needed */
+    width: 300px; /* Adjust size */
+    height: 300px;
+    margin-top: 150px;
+}
+
+.text-icons-wrapper .right-icon {
+    position: absolute;
+    right: -400px; /* Adjust position as needed */
+    width: 300px; /* Adjust size */
+    height: 300px;
+    margin-top: 150px;
+}
+
+.text-section .small-icon1 {
+    width: 55px; /* Adjust size of the icons */
+    height: 55px;
+    margin: 0 10px; /* Adjust spacing around icons */
+    margin-top: -30px;
+}
+
+.text-section .small-icon2 {
+    width: 50px; /* Adjust size of the icons */
+    height: 50px;
+    margin: 0 10px; /* Adjust spacing around icons */
+    margin-top: -30px;
+}
+
+.text-section .ride-text {
+    color: #FC8A06;
+    font-size: 60px;
+    font-weight: bold;
+    display: inline;
+}
+
+.text-section .and-text {
+    color: #000000;
+    font-size: 60px;
+    font-weight: bold;
+    display: inline;
+}
+
+.text-section .dine-text {
+    color: #028643;
+    font-size: 60px;
+    font-weight: bold;
+    display: inline;
+}
+
+.text-section .enjoy-text {
+    color: #7F4C10;
+    font-size: 60px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.text-section .anywhere-text {
+    color: #18500D;
+    font-size: 60px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.text-section .experience-our-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.text-section .experience-text {
+    color: #000000;
+}
+
+.text-section .benefits-text {
+    color: #028643;
+    margin-left: 10px;
+}
+
+.text-section .benefits-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.text-section .benefit-image {
+    width: 250px;
+    height: 280px;
+    margin: 0 50px;
+}
+
+/* Apply animations to respective elements */
+.benefit-image {
+    animation: fadeInBenefitsImages 1s forwards;
+}
+
+.side-icon.left-icon {
+    animation: fadeInBikeImage 1s forwards;
+}
+
+.side-icon.right-icon {
+    animation: fadeInChickenImage 1s forwards;
+}
+
+.small-icon1 {
+    animation: fadeInFriesImage 1s forwards;
+}
+
+.small-icon2 {
+    animation: fadeInEggImage 1s forwards;
+}
+
+.train-image {
+    animation: fadeInTrainImage 1s forwards;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -118,7 +268,7 @@
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(20px);
+        transform: translateX(-100%);
     }
     to {
         opacity: 1;
@@ -135,7 +285,77 @@
     }
 }
 
+/* Animation for BenefitsImages */
+@keyframes fadeInBenefitsImages {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+/* Animation for ChickenImage */
+@keyframes fadeInChickenImage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for BikeImage */
+@keyframes fadeInBikeImage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for EggImage */
+@keyframes fadeInEggImage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for FriesImage */
+@keyframes fadeInFriesImage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for TrainImage */
+@keyframes fadeInTrainImage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -200,5 +420,50 @@
         height: auto;
         margin-top: 20px; /* Add some spacing above the image */
         z-index: 1;
+    }
+
+    .text-section {
+        margin-bottom: 100px; /* Adjust margin for mobile */
+        margin-top: -100px;
+    }
+
+    .text-section .small-icon {
+        width: 15px; /* Adjust icon size for mobile */
+        height: 15px;
+        margin: 0 5px;
+    }
+
+    .text-section .ride-text,
+    .text-section .and-text,
+    .text-section .dine-text {
+        font-size: 35px; /* Adjust font size for mobile */
+    }
+
+    .text-section .enjoy-text,
+    .text-section .anywhere-text {
+        font-size: 35px; /* Adjust font size for mobile */
+        margin-top: -10px;
+    }
+
+    .text-section .side-icon {
+       display: none;
+    }
+
+    .text-section .experience-our-text {
+        font-size: 32px; /* Adjust font size for mobile */
+        flex-direction: column;
+        margin-bottom: -20px;
+        margin-top: 100px;
+    }
+
+    .text-section .benefits-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section .benefit-image {
+        width: 200px; /* Adjust size for mobile */
+        height: 250px;
+        margin: 15px 0;
     }
 }
