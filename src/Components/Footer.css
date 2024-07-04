@@ -1,0 +1,190 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply styles */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out; /* Added transition for section hover */
+}
+
+.footer-section:hover {
+    transform: translateY(-5px); /* Lift sections on hover */
+}
+
+.footer-section p {
+    margin: 10px 80px;
+    /* Adjusted margin */
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+}
+
+/* Keyframes Animation */
+@keyframes logoScale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.footer-logos .social-logo1 {
+    width: 30px;
+    height: 30px;
+    margin-left: 75px;
+    cursor: pointer;
+}
+
+.footer-logos .social-logo2 {
+    width: 30px;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+.footer-logos .social-logo1:hover {
+    animation: logoScale 1s ease-in-out infinite;
+    /* Adjusted animation duration */
+}
+
+.footer-logos .social-logo2:hover {
+    animation: logoScale 1s ease-in-out infinite;
+    /* Adjusted animation duration */
+}
+
+.footer-section:first-child p {
+    margin-top: 0;
+}
+
+.newline {
+    display: block;
+}
+
+.footer-section:nth-child(2) p:first-child,
+.footer-section:nth-child(3) p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.clickable {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out; /* Added transition for link hover */
+}
+
+.clickable:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    color: #3BADCD; /* Adjusted color on hover */
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #0B410D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.footer-left {
+    margin-left: 20px;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-center a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    margin-right: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: -5px;
+    }
+
+    .footer-section p {
+        margin: 1px 10px;
+    }
+
+    .footer-logos .social-logo1 {
+        margin-left: 110px;
+        margin-bottom: 5px;
+        /* Adjust spacing between logos on mobile */
+    }
+
+    .footer-logos .social-logo2 {
+        margin-left: 150px;
+        margin-top: -41px;
+    }
+
+    .footer-center {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 10px 0;
+    }
+
+    .footer-center {
+        margin: 10px 0;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .footer-center a:hover {
+        text-decoration: underline;
+    }
+}

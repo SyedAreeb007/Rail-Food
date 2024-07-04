@@ -5,6 +5,7 @@ import Signup from './Components/Signup';
 import { Routes, Route } from 'react-router-dom'; // Import Routes and Route
 import Header from './Components/Header';
 import Landing from './Components/Landing';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
