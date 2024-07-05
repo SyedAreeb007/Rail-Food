@@ -37,7 +37,7 @@ const Signup = () => {
             <img src={SignupWithFacebook} alt="Signup with Facebook" className="signup-with-facebook" />
           </div>
           <p className="have-account">
-            Already have an account? <Link to="/" className="login-account">Login</Link>
+            Already have an account? <Link to="/login" className="login-account">Login</Link>
           </p>
         </div>
       </div>

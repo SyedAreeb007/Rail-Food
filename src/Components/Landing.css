@@ -28,7 +28,7 @@ body {
 .landing-inputs-overlay {
     position: absolute;
     top: -425px;
-    right: 500px;
+    right: 440px;
     width: 100%;
     height: 100%;
     display: flex;

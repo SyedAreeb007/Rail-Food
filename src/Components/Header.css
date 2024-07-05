@@ -66,6 +66,18 @@
   margin-right: 8px;
 }
 
+/* Specific styling for the link inside login-button to ensure text color is white */
+.signup-account {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.signup-account span {
+  color: #fff; /* Ensure the span color is white */
+}
+
 @keyframes fadeIn {
   from {
       opacity: 0;
