@@ -18,6 +18,7 @@
 
 .header-container .logo-container .logo {
   height: 50px;
+  margin-left: 60px;
 }
 
 .header-container .buttons-container {
@@ -40,12 +41,12 @@
 
 .header-container .buttons-container .cart-button {
   background-color: #FC8A06;
-  margin-left: 10px; /* Add margin between buttons */
+  margin-right: 10px; /* Add margin between buttons */
 }
 
 .header-container .buttons-container .login-button {
   background-color: #2F5104;
-  margin-left: 10px; /* Add margin between buttons */
+  margin-right: 70px; /* Add margin between buttons */
 }
 
 .header-container .buttons-container button:hover {
@@ -106,7 +107,7 @@
 
   .header-container .buttons-container {
     margin-top: -35px; /* Add margin between logo and buttons */
-    margin-left: 130px;
+    margin-left: 96px;
   }
 
   .header-container .buttons-container button {
@@ -117,6 +118,6 @@
 
   .header-container .logo-container .logo {
     height: 40px; /* Decrease logo height */
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }

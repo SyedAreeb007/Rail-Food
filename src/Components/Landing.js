@@ -56,6 +56,7 @@ const Landing = () => {
                 <div className="enjoy-text">Enjoy Delicious Food</div>
                 <div className="anywhere-text">Anywhere You Go!</div>
                 <div className="experience-our-text">
+                    <br /><br />
                     <span className="experience-text">Experience Our</span>
                     <span className="benefits-text">Benefits</span>
                 </div>

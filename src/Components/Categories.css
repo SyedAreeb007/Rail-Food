@@ -1,0 +1,148 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styles for the page */
+.col {
+    width: 280px;
+    border-radius: 40px;
+    border: 1px solid rgb(189, 185, 185);
+    margin: 5px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply styles */
+p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.container-custom {
+    padding: 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.customer-favorites {
+    color: rgb(252, 138, 6);
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+.popular-categories {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    color: rgb(0, 108, 53);
+    animation: zoomIn 1s ease-out; /* Zoom in animation */
+}
+
+.popular-categories span {
+    color: rgb(252, 138, 6);
+}
+
+.category {
+    border: 1px solid rgb(189, 185, 185);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px; /* Slightly rounded corners for categories */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visual */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transitions */
+    animation: slideUp 0.6s ease-out; /* Slide up animation */
+}
+
+.category:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.category-img {
+    width: 100%;
+}
+
+.main-dish, .breakfast, .dessert, .barbecue {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.image-fluid {
+    width: 89%;
+    margin: 2rem 0;
+}
+
+.image-fluid:last-child {
+    width: 80%;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out; /* Slide in from the left */
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out; /* Slide in from the right */
+}
