@@ -1,0 +1,460 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styles for the restaurant component */
+.restaurant-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 1110px;
+  background-color: white;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  /* Apply Poppins font */
+  border: 1px solid #D0CCCC;
+  /* Added border */
+}
+
+.search-box {
+  background-color: white;
+  padding: 6px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border: 1px solid #D0CCCC;
+  /* Added border */
+  margin-bottom: 20px;
+  /* Add space between search box and map */
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-logo {
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.map-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 1000px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #D0CCCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+
+.location-display {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.daily-deals {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 1110px;
+  background-color: white;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  /* Apply Poppins font */
+  border: 1px solid #D0CCCC;
+  /* Added border */
+}
+
+.daily-deals-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 45px;
+}
+
+.daily-deals-title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.green-arrow {
+  height: 50px;
+  cursor: pointer;
+}
+
+.daily-deals-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: -5px 10px;
+}
+
+.deal-card1 {
+  width: 330px;
+  height: 180px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.deal-card2 {
+  width: 350px;
+  height: 180px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.deal-card3 {
+  width: 330px;
+  height: 180px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  margin-left: -25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cuisines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 1110px;
+  background-color: white;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  /* Apply Poppins font */
+  border: 1px solid #D0CCCC;
+  /* Added border */
+}
+
+.cuisines-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 45px;
+}
+
+.cuisines-title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.orange-arrow {
+  height: 50px;
+  cursor: pointer;
+}
+
+.cuisine-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  width: 1000px;
+}
+
+.cuisine-item {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home-chefs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 1110px;
+  background-color: white;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  /* Apply Poppins font */
+  border: 1px solid #D0CCCC;
+  /* Added border */
+}
+
+.home-chefs-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 45px;
+}
+
+.home-chefs-title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.home-chef-cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: -220px;
+  margin-bottom: 70px;
+  /* Adjust spacing as needed */
+}
+
+.home-chef-card {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Add keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Apply animations */
+.deal-card1, .deal-card2, .deal-card3, .cuisine-item, .home-chef-card {
+  animation: fadeIn 0.5s ease-in-out, zoomIn 0.5s ease-in-out;
+}
+
+/* Hover effects */
+.deal-card1:hover, .deal-card2:hover, .deal-card3:hover, .cuisine-item:hover, .home-chef-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effects for arrows */
+.green-arrow:hover {
+  filter: brightness(1.2) saturate(2) hue-rotate(70deg);
+  transition: filter 0.3s ease-in-out;
+}
+
+.orange-arrow:hover {
+  filter: brightness(1.2) saturate(2) hue-rotate(-40deg);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+
+  .restaurant-container,
+  .daily-deals,
+  .cuisines,
+  .home-chefs {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-box {
+    width: 95%;
+  }
+
+  .map {
+    width: 95%;
+  }
+
+  .daily-deals-cards,
+  .cuisine-list,
+  .home-chef-cards {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .restaurant-container,
+  .daily-deals,
+  .cuisines,
+  .home-chefs {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-box {
+    max-width: 75%;
+  }
+
+  .search-logo {
+    margin-left: -20px;
+  }
+
+  .search-input::placeholder {
+    font-size: 14px; /* Adjust the font size as needed */
+  }  
+
+  .location-display {
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .daily-deals-title,
+  .cuisines-title,
+  .home-chefs-title {
+    font-size: 28px;
+  }
+
+  .search-box {
+    width: 100%; 
+    padding: 6px 12px;
+  }
+
+  .map {
+    height: 200px;
+  }
+
+  .daily-deals-header,
+  .cuisines-header,
+  .home-chefs-header {
+    padding: 20px;
+  }
+
+  .daily-deals-cards,
+  .cuisine-list,
+  .home-chef-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .deal-card1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .deal-card2 {
+    width: 295px;
+    height: auto;
+  }
+
+  .deal-card3 {
+    margin-left: 0.1%;
+    width: 100%;
+    height: auto;
+  }
+
+  .cuisine-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-chefs-header {
+    padding-bottom: 1000px;
+  }
+
+  .home-chef-card {
+    margin-top: -800px;
+    margin-bottom: 200px;
+    width: 60%;
+    height: auto;
+  }
+
+  /* Increase height of daily-deals to fit all cards */
+  .daily-deals {
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Adjust height of cuisines to display scrollable items */
+  .cuisines {
+    height: auto;
+    padding: 20px;
+  }
+
+  .cuisine-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+
+  /* Adjust height of home-chefs to fit all cards */
+  .home-chefs {
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Ensure home-chef cards are displayed inside the home-chefs box one by one */
+  .home-chef-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .daily-deals-title,
+  .cuisines-title,
+  .home-chefs-title {
+    font-size: 24px;
+  }
+
+  .green-arrow,
+  .orange-arrow {
+    height: 40px;
+  }
+
+  .deal-card1,
+  .deal-card2,
+  .deal-card3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .home-chef-cards {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
