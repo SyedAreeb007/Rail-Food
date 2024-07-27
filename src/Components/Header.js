@@ -14,16 +14,18 @@ const Header = () => {
         </Link>
       </div>
       <div className="buttons-container">
-        <button className="cart-button" style={{ animation: 'slideInLeft 1s forwards' }}>
-          <img src={CartLogo} alt="Cart" className="button-logo" />
-          <span>Cart</span>
-        </button>
-        <button className="login-button" style={{ animation: 'slideInRight 1s forwards' }}>
-          <Link to="/signup" className="signup-account">
+        <Link to="/cart" className="cart-link">
+          <button className="cart-button" style={{ animation: 'slideInLeft 1s forwards' }}>
+            <img src={CartLogo} alt="Cart" className="button-logo" />
+            <span>Cart</span>
+          </button>
+        </Link>
+        <Link to="/signup" className="login-link">
+          <button className="login-button" style={{ animation: 'slideInRight 1s forwards' }}>
             <img src={LoginLogo} alt="Login/Signup" className="button-logo" />
             <span>Login/Signup</span>
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </div>
   );

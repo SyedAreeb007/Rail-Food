@@ -1,6 +1,14 @@
 /* Import the font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../Assets/Images/backgroundForAllRestaurants.png");
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }  
+
 /* General styles for the page */
 .col {
     width: 280px;
@@ -96,8 +104,11 @@ p {
 
 .customer-favorites {
     color: rgb(252, 138, 6);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8%;
+    display: block; /* Ensures it takes full width */
     animation: fadeIn 1s ease-in-out;
-    /* Fade in animation */
 }
 
 .popular-categories {
@@ -108,6 +119,9 @@ p {
     color: rgb(0, 108, 53);
     animation: zoomIn 1s ease-out;
     /* Zoom in animation */
+    
+    margin-top: -2%;
+    margin-bottom: 7%;
 }
 
 .popular-categories span {
@@ -128,6 +142,7 @@ p {
     /* Smooth transform and shadow transitions */
     animation: slideUp 0.6s ease-out;
     /* Slide up animation */
+    cursor: pointer;
 }
 
 .category:hover {
@@ -227,18 +242,17 @@ p {
 
 .overlay-img {
     width: 100%;
-    /* Adjust as needed */
     height: auto;
     background: rgba(255, 255, 255, 0.8);
-    /* Optional: semi-transparent background */
     padding: 5px;
-    /* Optional: padding */
     cursor: pointer;
     animation: zoomIn 1s ease-out;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .overlay-img:hover {
     transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 576px) {
@@ -253,6 +267,16 @@ p {
 }
 
 @media (max-width: 768px) {
+    .customer-favorites {
+        margin-top: 38%;
+    }
+    
+    .popular-categories {
+        margin-top: -5%;
+        margin-bottom: 35%;
+        width: 100%;
+    }
+
     .btn-overlay {
         font-size: 14px;
         padding: 8px 16px;

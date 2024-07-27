@@ -7,129 +7,147 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff; /* Changed from #f8f8f8 to #ffffff */
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd;
-  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  font-family: 'Poppins', sans-serif;
+  position: relative; /* Ensures relative positioning for any absolutely positioned elements */
 }
 
+/* Ensure logo-container has proper spacing */
 .header-container .logo-container {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
+/* Adjust logo styles */
 .header-container .logo-container .logo {
   height: 50px;
-  margin-left: 60px;
+  margin-left: 0; /* Remove margin for better centering */
 }
 
+/* Align buttons horizontally */
 .header-container .buttons-container {
   display: flex;
-  align-items: center; /* Align buttons vertically */
+  align-items: center;
+  margin: 0; /* Ensure no extra margin causing layout shifts */
 }
 
+/* Styles for buttons */
 .header-container .buttons-container button {
   display: flex;
   align-items: center;
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 14px; /* Decreased font size */
+  font-size: 14px;
   color: #fff;
-  padding: 10px 20px; /* Adjusted padding */
+  padding: 10px 20px;
   border-radius: 120px;
-  transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+  transition: background-color 0.3s ease;
 }
 
+/* Button specific styles */
 .header-container .buttons-container .cart-button {
   background-color: #FC8A06;
-  margin-right: 10px; /* Add margin between buttons */
+  margin-right: 10px;
 }
 
 .header-container .buttons-container .login-button {
   background-color: #2F5104;
-  margin-right: 70px; /* Add margin between buttons */
 }
 
+/* Hover effects */
 .header-container .buttons-container button:hover {
   opacity: 0.9;
 }
 
 .header-container .buttons-container .cart-button:hover {
-  background-color: #F9AA4E; /* Hover color for cart button */
+  background-color: #F9AA4E;
 }
 
 .header-container .buttons-container .login-button:hover {
-  background-color: #14C66C; /* Hover color for login button */
+  background-color: #14C66C;
 }
 
+/* Style for button logos */
 .header-container .buttons-container .button-logo {
   height: 15px;
   margin-right: 8px;
 }
 
-/* Specific styling for the link inside login-button to ensure text color is white */
-.signup-account {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit; /* Inherit the color from the parent */
+/* Remove underline from links and ensure color inheritance */
+.cart-link, .login-link {
+  text-decoration: none; 
+  color: inherit;
 }
 
-.signup-account span {
-  color: #fff; /* Ensure the span color is white */
+/* Ensure white color for span elements inside links */
+.cart-link span, .login-link span {
+  color: #fff;
 }
 
+/* Keyframes for animations */
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes slideInLeft {
   from {
-      transform: translateX(-100%);
-      opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideInRight {
   from {
-      transform: translateX(100%);
-      opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .header-container {
-    padding: 10px; /* Reduce padding */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .header-container .buttons-container {
-    margin-top: -35px; /* Add margin between logo and buttons */
-    margin-left: 96px;
+    margin: 0; /* Reset margin for mobile view */
+    flex-direction: column; /* Stack buttons vertically */
   }
 
-  .header-container .buttons-container button {
-    font-size: 12px; /* Decrease font size for buttons */
-    padding: 8px 12px; /* Adjust padding for smaller buttons */
-    margin-left: 5px; /* Reset margin for buttons */
+  .header-container .buttons-container .cart-button {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-left: 120%;
+    margin-top: -35px;
+  }
+
+  .header-container .buttons-container .login-button {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-left: 170%;
+    margin-top: -35px;
   }
 
   .header-container .logo-container .logo {
-    height: 40px; /* Decrease logo height */
-    margin-left: 20px;
+    height: 40px;
+    margin-left: 50%; /* Center logo */
   }
 }

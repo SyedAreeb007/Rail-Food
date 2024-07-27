@@ -48,8 +48,8 @@ const Restaurant = () => {
   }, []);
 
   return (
-    <>
-      <div className="restaurant-container">
+    <><br /><br />
+      <div  className="restaurant-container justify-content-center text-center container my-4">
         <div className="search-box">
           <input type="text" placeholder="What are you craving for" className="search-input" />
           <img src={SearchLogo} alt="Search" className="search-logo" />
@@ -64,24 +64,24 @@ const Restaurant = () => {
         </div>
       </div>
 
-      <div className="daily-deals">
+      <div className="daily-deals justify-content-center text-center container">
         <div className="daily-deals-header">
           <span className="daily-deals-title">Daily Deals</span>
           <img src={GreenArrow} alt="Green Arrow" className="green-arrow" />
         </div>
-        <div className="daily-deals-cards">
+        <div className="daily-deals-cards justify-content-center text-center">
           <img src={card1} alt="Card 1" className="deal-card1" />
           <img src={card2} alt="Card 2" className="deal-card2" />
           <img src={card3} alt="Card 3" className="deal-card3" />
         </div>
       </div>
 
-      <div className="cuisines">
+      <div className="cuisines justify-content-center text-center p-3 my-5 container">
         <div className="cuisines-header">
           <span className="cuisines-title">Top Most Cuisines</span>
           <img src={OrangeArrow} alt="Orange Arrow" className="orange-arrow" />
         </div>
-        <div className="cuisine-list">
+        <div className="cuisine-list justify-content-center text-center">
           <img src={CuisineList1} alt="Cuisine 1" className="cuisine-item" />
           <img src={CuisineList2} alt="Cuisine 2" className="cuisine-item" />
           <img src={CuisineList3} alt="Cuisine 3" className="cuisine-item" />
@@ -93,11 +93,11 @@ const Restaurant = () => {
         </div>
       </div>
 
-      <div className="home-chefs">
-        <div className="home-chefs-header">
-          <span className="home-chefs-title">Home Chefs</span>
+      <div className="home-chefs justify-content-center text-center my-5 container">
+        <div className="home-chefs-header my-5">
+          <span className="home-chefs-title">Home Chefs</span> 
           <img src={GreenArrow} alt="Green Arrow" className="green-arrow" />
-        </div>
+        </div><br /><br /><br /><br /><br /><br /><br />
       </div>
 
       <div className="home-chef-cards">

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-line-image {
+  width: 30%;
+  margin: 5% 35% -1%;
+  animation: slideIn 1s ease-in-out;
+}
+
+.mobile-cart-section {
+  margin-top: 130px;
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #F9F9F9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 450px;
+  height: 450px;
+  width: 90%;
+  margin: 5% auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mobile-cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #028643;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 120px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.mobile-basket-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.mobile-basket-text {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.mobile-cart-content {
+  text-align: center;
+}
+
+.mobile-smile-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+.mobile-craving-text {
+  color: #FC8A06;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mobile-empty-text {
+  color: #028643;
+  font-size: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-line-image {
+      width: 60%;
+      margin: 5% 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .cart-line-image {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+  .mobile-basket-text {
+    font-size: 22px;
+  }
+
+  .mobile-craving-text, .mobile-empty-text {
+    font-size: 18px;
+  }
+}

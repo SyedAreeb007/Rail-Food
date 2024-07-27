@@ -27,7 +27,7 @@ body {
 
 .landing-inputs-overlay {
     position: absolute;
-    top: -425px;
+    top: -100px;
     right: 440px;
     width: 100%;
     height: 100%;
@@ -43,6 +43,7 @@ body {
     max-width: 300px; /* Adjust as needed */
     margin: 10px;
     text-align: left; /* Align text to the left */
+    margin-top: -50%;
 }
 
 .landing-input-container label {
@@ -55,7 +56,7 @@ body {
     width: 100%;
     padding: 8px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    border: 1px solid #8a6060;
     border-radius: 15px;
 }
 
@@ -68,12 +69,8 @@ body {
     width: calc(100% - 70px); /* Adjust input width to accommodate button */
 }
 
-.or-text-specific {
-    margin-right: 80px;
-}
-
 .landing-button {
-    margin-left: 10px; /* Adjust spacing between input and button */
+   /* Adjust spacing between input and button */
     padding: 7px 28px; /* Larger padding for button */
     font-size: 16px; /* Larger font size for button text */
     min-width: 100px; /* Set minimum width for button */
@@ -83,6 +80,7 @@ body {
     color: white;
     transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
     cursor: pointer;
+   
 }
 
 .landing-button:hover {
@@ -217,10 +215,16 @@ body {
 }
 
 .side-icon.left-icon {
+    width: 70%;
+    height: auto;
+    margin-left: 20%;
     animation: fadeInBikeImage 1s forwards;
 }
 
 .side-icon.right-icon {
+    width: 70%;
+    height: auto;
+    margin-right: 10%;
     animation: fadeInChickenImage 1s forwards;
 }
 
@@ -394,12 +398,17 @@ body {
     .landing-inputs-overlay {
         z-index: 1; /* Ensure inputs appear above the background */
         margin-bottom: 250px;
+        margin-top: 50%;
+    }
+
+    .landing-input-container {
+        margin-top: 15%;
     }
 
     .mobile-heading {
         display: block; /* Show the heading in mobile view */
         position: relative;
-        margin-top: -50px;
+        margin-top: -65%;
         text-align: center;
         z-index: 2; /* Ensure text appears above everything else */
     }
@@ -418,7 +427,7 @@ body {
 
     .train-image {
         display: block; /* Show the train image in mobile view */
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-top: 20px; /* Add some spacing above the image */
         z-index: 1;
@@ -467,5 +476,60 @@ body {
         width: 200px; /* Adjust size for mobile */
         height: 250px;
         margin: 15px 0;
+    }
+}
+
+/* Media query for tablets (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+        
+    .landing-inputs-overlay {
+        position: absolute;
+        top: -100px;
+        right: 440px;
+        width: 70%;
+        height: 80%;
+        display: flex;
+        flex-direction: column; /* Display inputs in a column */
+        align-items: center;
+        justify-content: center;
+        z-index: 1; /* Ensure inputs appear above the image */
+    }
+    
+    .landing-button:hover {
+        background-color: #F9AA4E; /* Darker shade on hover */
+    }
+    
+    /* Hide the mobile heading and train image in desktop view */
+    .mobile-heading,
+    .train-image {
+        display: none;
+    }
+    
+    .side-icon.left-icon {
+        width: 50%;
+        height: auto;
+        margin-left: 45%;
+        margin-top: 25%;
+        animation: fadeInBikeImage 1s forwards;
+    }
+    
+    .side-icon.right-icon {
+        width: 50%;
+        height: auto;
+        margin-right: 45%;
+        margin-top: 25%;
+        animation: fadeInChickenImage 1s forwards;
+    }
+    
+    .small-icon1 {
+        animation: fadeInFriesImage 1s forwards;
+    }
+    
+    .small-icon2 {
+        animation: fadeInEggImage 1s forwards;
+    }
+    
+    .train-image {
+        animation: fadeInTrainImage 1s forwards;
     }
 }

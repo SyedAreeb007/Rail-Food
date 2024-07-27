@@ -50,7 +50,7 @@ export default function Categories() {
                     </div>
                 </div>
                 <br /><br />
-                <div class="container-fluid text-center justify-content-center my-5">
+                <div class="container text-center justify-content-center my-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-5 col-md-6 col-sm-12 image-container text-center justify-content-center">
                             <img className="img-fluid my-4 slide-in-left" src={partner} alt="Get Started" />
@@ -63,7 +63,7 @@ export default function Categories() {
                     </div>
                 </div>
                 <div className="container image-wrapper">
-                    <img className="main-img-fluid" src={pocket} alt="Pocket" />
+                    <img style={{width:'90%'}} className="main-img-fluid" src={pocket} alt="Pocket" />
                     <div className="overlay-images">
                         <a href="https://www.facebook.com" className="image-wrapper">
                             <img className="overlay-img" src={play} alt="Overlay 1" />
@@ -73,7 +73,7 @@ export default function Categories() {
                         </a>
                     </div>
                 </div>
-                <img style={{ width: '80%' }} className="image-fluid my-4 slide-in-left" src={customer} alt="Customer" />
+                <img style={{ width: '79%' }} className="image-fluid my-4 slide-in-left" src={customer} alt="Customer" />
             </div>
         </>
     );
